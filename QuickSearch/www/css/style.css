@@ -1,0 +1,258 @@
+/*
+definir avant notre css pour les different elements 
+*/
+.icon-about, .icon-home,.icon-score, i {
+ /* background-image: url('img/icon-sf81fe3aabe.png');*/
+ background-repeat: no-repeat;
+ }
+.start{
+  vertical-align: center;
+  height: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 45px;
+  display: inline;
+} 
+ .choix{
+  display: inline-block; 
+
+}
+
+ .tooltip {
+  display: none;
+  margin-left: 20px;
+  padding: 2px 4px;
+  border: 1px solid #555;
+  background-color: #CCC;
+  border-radius: 4px;
+  }
+
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; 
+}
+
+html {
+  line-height: 1; 
+}
+input{
+  border: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  /*background-image:  url('img/icon-sf81fe3aabe.png');*/
+ }
+ input.text {
+  display: inline;
+  float: right;
+  padding: 0 1px;
+  text-align: center;
+  width: 100%; 
+  height: 48px;
+  border: 3px solid #1f253d;
+  background-color: #4f597b;
+  color: #fff;
+  font-size: 24px;
+  padding-left: 10px;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+   }
+  input.text:focus {
+    border: 1px solid #11a7ab; 
+  }
+
+   input.submit, .btn {
+  display: inline-block;
+  padding: 0 5px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #e54b65;
+  float: center;
+  text-decoration: none; }
+
+
+  p {
+  margin: 1em 0px;
+  overflow: hidden;
+  *zoom: 5; 
+  font-size: 20px;
+  }
+
+
+@import "compass";
+
+*{@include box-sizing(border-box);}
+
+body{
+    color: #8f99b7;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    background-color: #1f25d;
+}
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin: 45px;
+  display: none;
+   }
+   p {
+  margin: 1em 0px;
+  overflow: hidden;
+  *zoom: 1; 
+  text-align: center;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+section{
+  display: block; 
+}
+
+.icon-home {
+  background-position: -32px -50px;
+  height: 32px;
+  width: 32px;
+  background-image: url('img/icon-sf81fe3aabe.png');
+   }
+ 
+
+  .icon-about {
+  background-position: 0 -50px;
+  height: 32px;
+  width: 32px; 
+  background-image: url('img/icon-sf81fe3aabe.png');
+  }
+  .icon-score {
+  
+  height: 100px;
+  width: 100px; 
+  background-image: url('img/score.png');
+  }
+
+  * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+  i {
+  display: inline-block; 
+  }
+
+/* Css pour notre interface*/
+/* notre header*/
+.head{ /* doit etr positionner en haut de notre page*/
+
+    position: absolute; /* les element de notre header prendront la position % a la taille disponible*/
+    top: 0; left: 0; right: 0;
+    height: 60px; line-height: 60px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #11a7ab;
+}
+
+/* notre view*/
+.view {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 60px;
+  left: 0; 
+  background-color: #4f597b;
+ }
+
+/* notre footer*/
+.nav{ /* doit etr positionner en bas de notre page*/
+
+    position: absolute; /* les element de notre header prendront la position % a la taille disponible*/
+    bottom: 0; left: 0; right: 0;
+    height: 60px; line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #11a7ab;
+}
+.nav a {
+    display: block;
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; 
+}
+.nav a:first-child {
+    border-right: 1px solid #1f253d; 
+}
+    .nav i {
+        margin-top: 15px;
+     }
+     .nav .active {
+        border-top: 5px solid #11a7ab;
+        border-color: #4f597b; 
+    }
+
+.panel, .loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+  .panel-padding {
+  padding: 0 25px; }
+
+
+
+
+
+
+
+
+
