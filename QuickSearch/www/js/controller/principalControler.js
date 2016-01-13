@@ -1,7 +1,7 @@
 function principalControler($scope){
      $scope.city = "";
       $scope.reponse = "";
-      var liste_pays= {France:'Paris', Italie:'Rome', Espagne:'Madrid', Allemagne:'Munich'};
+      var liste_pays= {France:'Paris', Italie:'Rome', Espagne:'Madrid', Allemagne:'Berlin'};
       //var alphabet= {'A', 'B','C','D'};
       //var alphabet= {1:'AFRIQUE(53)', 2:'Europe(100)',3:'Asie(40)',4:'Amerique(200)',5:'Oceanie(20)'};
       var alphabet= {1:'France', 2:'Italie', 3:'Espagne', 4:'Allemagne'};
